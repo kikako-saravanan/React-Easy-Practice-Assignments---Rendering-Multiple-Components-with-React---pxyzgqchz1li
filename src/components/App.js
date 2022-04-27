@@ -3,11 +3,19 @@ import '../styles/App.css';
 
 
 const App = () => {
-  return <div id="main">
-    <h1 data-ns-test="project-name">Memories Website</h1>
-    <h2 data-ns-test="project-description">A website for my favourite memories.</h2>
-  </div>;
+  const pname = "project-name";
+  const pdesc = "project-description";
+  return (
+    <div id="main">
+      <h1 data-ns-test={pname}>Memories App</h1>
+
+      <p data-ns-test={pdesc}>
+        An App to store my favourite memories of my life
+      </p>
+    </div>
+  );
 };
+
 
 
 export default App;
